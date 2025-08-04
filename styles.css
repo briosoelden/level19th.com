@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url('tulips.png') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Georgia', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main Content Container */
+.container {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 40px 60px;
+  border-radius: 12px;
+  max-width: 700px;
+  width: 90%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(3px);
+  text-align: center;
+}
+
+/* Title Style */
+.title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  cursor: pointer;
+  color: #222;
+}
+
+/* Letter Text */
+.love-letter {
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #333;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+/* Button Style */
+#revealButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Utility Class to Hide */
+.hidden {
+  display: none;
+}
+
+/* ✅ Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 30px 25px;
+  }
+
+  .title {
+    font-size: 1.8em;
+  }
+
+  .love-letter {
+    font-size: 17px;
+  }
+
+  #revealButton {
+    font-size: 15px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px 15px;
+  }
+
+  .title {
+    font-size: 1.5em;
+  }
+
+  .love-letter {
+    font-size: 16px;
+  }
+
+  #revealButton {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+}
